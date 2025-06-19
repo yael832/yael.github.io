@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu Example</title>
+    <link rel="stylesheet" href="estilo.css"> </head>
+<body>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f7;
+        }
+        header {
+            background-color: #003d3d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #009999;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            background-image: url("img/sector.jpg");
+            background-repeat: no-repeat;
+            padding: 40px;
+            margin-left: 290px;
+            height: 100vh;
+            background-size: cover;
+        }
+        .producto {
+            backdrop-filter: blur(10px);
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .producto img {
+            max-width: 250px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .producto-info {
+            flex: 1;
+        }
+        h2 {
+            color:#c5bbbb;
+        }
+        footer {
+            background-color: #003d3d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+<body>
+<section id="productos">
+    <h2>Catálogo de Productos</h2>
+    <div class="producto">
+        <img src="img/dacron.jpg" alt="Espuma de Poliuretano">
+        <div class="producto-info">
+            <h3>Espuma de Poliuretano</h3>
+            <p>Ideal para techos, paredes y cámaras frigoríficas. Gran resistencia térmica y aislamiento acústico.</p>
+            <ul>
+                <li>Conductividad térmica: 0.022 W/mK</li>
+                <li>Formato: Panel rígido o spray</li>
+                <li>Uso: Industrial y residencial</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/diamond.jpg" alt="Lana de Roca">
+        <div class="producto-info">
+            <h3>Lana de Roca</h3>
+            <p>Material natural a base de roca volcánica. Excelente comportamiento ante el fuego y propiedades térmico-acústicas.</p>
+            <ul>
+                <li>Resistencia al fuego: hasta 1000°C</li>
+                <li>Formato: Planchas o rollos</li>
+                <li>Aplicación: Tuberías, techos y muros</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="img/nomex.jpg" alt="Fibra de Vidrio">
+        <div class="producto-info">
+            <h3>Fibra de Vidrio</h3>
+            <p>Ligera, económica y eficaz para viviendas, oficinas y ductos de aire acondicionado.</p>
+            <ul>
+                <li>Densidad: 12 a 48 kg/m³</li>
+                <li>Resistente a la humedad</li>
+                <li>Buena absorción acústica</li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+
+
+<d    iv class="sidebar">
+        <h2><img src="img/logo1.jpg" alt="WY Electric Logo">
+        </h2>
+        <ul>
+            <li><a href="carrusel.html">Inicio</a></li>
+            <li><a href="distribuidores.html">Distribuidores</a></li>
+            <li><a href="productos.html">Otros Productos</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+            <li><a href="info.html">Conoce Mas de nosotros</a></li>
+            </ul>
+    </div>
+</body>
+
+</html>
