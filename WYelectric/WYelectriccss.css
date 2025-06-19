@@ -1,0 +1,248 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 80px;
+}
+
+.contact-info span {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.contact-info a {
+    color: #007bff; /* Color azul para el email */
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px, 5px;
+    background-color: #000000; /* Fondo oscuro para la navegación */
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-image:url(img/sector.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: transparent;
+}
+
+.gray-box-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.gray-box {
+  backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative; /* Necesario para posicionamiento del botón */
+}
+
+.gray-box h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.gray-box p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #dc3545; /* Rojo del botón */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espacio encima del botón */
+}
+
+.contact-button:hover {
+    background-color: #c82333;
+}
+
+/* Carrusel de Imágenes */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Asegura que la tira de imágenes ocupe el ancho del contenedor */
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsión */
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.carousel-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-dots .dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+    background-color: #dc3545; /* Rojo del botón, para el punto activo */
+}
+
+
+/* Distributor Section */
+.distributor-section {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.distributor-section h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.distributor-section p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.secondary-button {
+    display: inline-block;
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: #0056b3;
+}
+
+/* Volume Sales */
+.volume-sales {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
